@@ -1,4 +1,4 @@
-# Meal App - Frontend Test
+# 🍽️ Meal App - Frontend Test
 
 Aplikasi web berbasis React untuk menampilkan daftar bahan makanan (ingredients), detail makanan (meals), serta informasi lengkap seperti resep, instruksi, dan video tutorial.
 
@@ -6,35 +6,35 @@ Project ini dibuat sebagai bagian dari technical test Frontend Developer.
 
 ---
 
-## Tech Stack
+## 🚀 Tech Stack
 
-* React (Vite)
-* TypeScript
-* Tailwind CSS
-* Framer Motion
-* React Router
-* Axios / Fetch API
-* TheMealDB API
+* ⚛️ React (Vite)
+* 🟦 TypeScript
+* 🎨 Tailwind CSS
+* 🎞️ Framer Motion
+* 🔗 React Router
+* 📦 Axios / Fetch API
+* 🍽️ TheMealDB API
 
 ---
 
-## Fitur Utama
+## 📦 Fitur Utama
 
-* Menampilkan daftar ingredients
-* Detail ingredient (list meals berdasarkan bahan)
-* Detail meal:
+* 🔍 Menampilkan daftar ingredients
+* 📄 Detail ingredient (list meals berdasarkan bahan)
+* 🍲 Detail meal:
 
   * Gambar makanan
   * Daftar bahan & takaran
   * Instruksi memasak
   * Video tutorial (YouTube)
-* Breadcrumb navigation
-* UI modern & responsive
-* Animasi menggunakan Framer Motion
+* 🧭 Breadcrumb navigation
+* 🎨 UI modern & responsive
+* ⚡ Animasi menggunakan Framer Motion
 
 ---
 
-## Instalasi & Menjalankan Project
+## 🛠️ Instalasi & Menjalankan Project
 
 ### 1. Clone Repository
 
