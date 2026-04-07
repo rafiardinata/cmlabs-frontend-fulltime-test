@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Aturan untuk menghindari redirect loop
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+
+# Jika file atau direktori tidak ada, arahkan ke index.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
