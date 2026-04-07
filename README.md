@@ -4,6 +4,11 @@ Aplikasi web berbasis React untuk menampilkan daftar bahan makanan (ingredients)
 
 Project ini dibuat sebagai bagian dari technical test Frontend Developer.
 
+Preview
+---
+I deploy this MealApp so you can see: 👉 [Live Demo](https://meal-app.rafiardinata.my.id/)
+
+<img width="1919" height="990" alt="Screenshot 2026-04-07 155602" src="https://github.com/user-attachments/assets/2d9f68f6-6600-4842-b66b-b9b776c35105" />
 ---
 
 ## 🚀 Tech Stack
