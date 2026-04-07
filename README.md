@@ -1,73 +1,127 @@
-# React + TypeScript + Vite
+# Meal App - Frontend Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web berbasis React untuk menampilkan daftar bahan makanan (ingredients), detail makanan (meals), serta informasi lengkap seperti resep, instruksi, dan video tutorial.
 
-Currently, two official plugins are available:
+Project ini dibuat sebagai bagian dari technical test Frontend Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React (Vite)
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* React Router
+* Axios / Fetch API
+* TheMealDB API
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Fitur Utama
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Menampilkan daftar ingredients
+* Detail ingredient (list meals berdasarkan bahan)
+* Detail meal:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  * Gambar makanan
+  * Daftar bahan & takaran
+  * Instruksi memasak
+  * Video tutorial (YouTube)
+* Breadcrumb navigation
+* UI modern & responsive
+* Animasi menggunakan Framer Motion
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Instalasi & Menjalankan Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/rafiardinata/cmlabs-frontend-fulltime-test.git
+cd cmlabs-frontend-fulltime-test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. Install Dependencies
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+atau jika menggunakan yarn:
+
+```bash
+yarn install
+```
+
+---
+
+### 3. Jalankan Project
+
+```bash
+npm run dev
+```
+
+atau:
+
+```bash
+yarn dev
+```
+
+---
+
+### 4. Akses di Browser
+
+Buka:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Struktur Folder (Sederhana)
+
+```
+src/
+│
+├── components/     # Reusable components (UI, Breadcrumb, Layout)
+├── pages/          # Halaman utama (Ingredients, Detail, dll)
+├── services/       # API call (MealDB)
+├── types/          # TypeScript types
+├── hooks/          # Custom hooks
+└── utils/          # Helper functions
+```
+
+## ⚠️ Catatan
+
+* Tidak memerlukan konfigurasi environment (.env)
+* Pastikan koneksi internet aktif (karena menggunakan public API)
+* Project sudah siap dijalankan setelah clone (no additional setup)
+
+---
+
+## ✅ Status Project
+
+✔️ Siap dijalankan setelah clone
+✔️ Tidak ada dependency tambahan
+✔️ Struktur clean & scalable
+✔️ Cocok untuk proses audit / review
+
+---
+
+## 👨‍💻 Author
+
+**Rafi Ardinata Riskiansyah**
+
+---
+
+## 📌 Penutup
+
+Terima kasih atas kesempatan yang diberikan untuk mengerjakan technical test ini.
+Semoga project ini dapat memberikan gambaran kemampuan saya dalam pengembangan frontend modern.
+
+---
